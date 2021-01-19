@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    background: #324157;
+    color: #fff;
+    
+    &-item{
+        border: 1px solid #ccc;
+        padding: 3px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+}
+.main{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    .menu{
+        width: 250px;
+        background: #eef1f6;
+        // color: royalblue;
+        // cursor: pointer;
+        .menu-item{
+            cursor: pointer;
+            color: white;
+        }
+        .menu-active{
+            background: royalblue;
+            color: springgreen;
+        }
+    }
+    .content{
+        flex: 1;
+        background: #fff;
+    }
+}
